@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Boilerplate",
+  "version": "1.0",
+
+  "description": "",
+
+  "icons": {
+    "48": "icons/icon-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.google.com/*"],
+      "js": ["boilerplate.js"]
+    }
+  ]
+}
