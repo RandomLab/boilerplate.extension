@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Basic",
+  "version": "1.0",
+  "description": "Dessine un cadre rouge sur toutes les pages de google.com",
+
+  "icons": {
+    "48": "icons/icon-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.google.com/*"],
+      "js": ["basic.js"]
+    }
+  ]
+}
