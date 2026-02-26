@@ -46,3 +46,6 @@ chrome://extensions
 - documentation
 https://developer.chrome.com/docs/extensions/get-started?hl=fr
 https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples
+
+## examples 
+https://developer.mozilla.org/fr/docs/Mozilla/Add-ons/WebExtensions/Examples

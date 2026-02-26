@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Word Replacer",
+  "name": "Remplace",
   "version": "1.0",
-  "description": "Replaces words on web pages",
+  "description": "Remplace un mot par un autre",
   "content_scripts": [
     {
       "matches": ["<all_urls>"],

@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+    display: flex;
+    border: 5px solid black;
+}
+
+.right {
+    width: 50%;
+    background-color: gray;
+    border: 5px solid black;
+}
+
+.left {
+    width: 50%;
+    background-color: gray;
+    border: 5px solid black;
+}

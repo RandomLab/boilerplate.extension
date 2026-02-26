@@ -1,0 +1,33 @@
+{
+   "action": {
+      "default_icon": "abstract-yes.png",
+      "icons": [ "abstract-yes.png", "abstract-no.png" ],
+      "name": "Start Abstract Browsing"
+   },
+   "author": "Rafaël Rozendaal & Reinier Feijen",
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "css": [ "hide.css" ],
+      "js": [ "config.js", "check.js", "jquery-2.1.1.min.js" ],
+      "matches": [ "*://*/*" ]
+   }, {
+      "css": [ "general.css" ],
+      "matches": [ "*://chrome.google.com/webstore*" ]
+   } ],
+   "description": "Abstract browsing",
+   "homepage_url": "http://www.abstractbrowsing.net",
+   "host_permissions": [ "*://*/*" ],
+   "icons": {
+      "128": "icon_128.png",
+      "16": "icon_16.png",
+      "48": "icon_48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqjx1qw/CQnAbW5HxcYft25J6nrS69K3iDDSHXCZr414srxfjL0/xS067o0Zqzy7Dez5JtZjWfc7GDlilDYGIcE3RMqumWvkUiD0i608Bw3HcO1DwvYz27XVLRGCS7uofvg4u4SyJgu3JZF/Dx7NdUXZUg/7yKaJYqzAAjsO5L+WksKjtlFKLNuVxpbTM1tOJRP+NuW+v9gfEFEQqPD3f9OzC5ufgTZCVGwxoYMf//axjmflnAg+qdKFSsoaGpVeS5uyfBohZ7n0h81DDIxQ2QKpphOdh9qbHqqaNVj9JEDjsP+yzKMTlWUSb0a/JW8TKcUf/ppYdUAzDNNAlmQR5ZQIDAQAB",
+   "manifest_version": 3,
+   "name": "Abstract Browsing",
+   "permissions": [ "tabs", "activeTab", "storage", "scripting" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.0.0"
+}
