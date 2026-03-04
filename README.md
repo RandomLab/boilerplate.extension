@@ -49,3 +49,17 @@ https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-s
 
 ## examples 
 https://developer.mozilla.org/fr/docs/Mozilla/Add-ons/WebExtensions/Examples
+
+
+## api
+https://github.com/public-apis/public-apis
+
+
+https://cataas.com/
+
+curl -v https://cataas.com/cat
+
+curl -v https://cataas.com/api/cats
+
+curl https://meowfacts.herokuapp.com/
+curl https://meowfacts.herokuapp.com/?count=4
