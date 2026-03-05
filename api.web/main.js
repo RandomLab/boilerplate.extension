@@ -1,11 +1,10 @@
 // fonction asynchrone pour récupérer les données d'une api
-async function getData() {
+const container = document.querySelector(".container");
+
+async function getData(number) {
     
     // on déclare le endpoint de l'api avec un paramètre
-    const url = "https://meowfacts.herokuapp.com/?count=10";
-    const container = document.querySelector(".container");
-
-    console.log(container)
+    const url = `https://meowfacts.herokuapp.com/?count=${number}`;
 
     // bloc try catch pour gérer les erreurs
     try {
@@ -31,7 +30,19 @@ async function getData() {
 }
 
 function ready() {
-    getData()
+    const button = document.getElementById("btn");
+    const number = document.getElementById("number");
+    const reset = document.getElementById("reset");
+
+    button.addEventListener("click", function(e) {        
+        getData(number.value);
+    });
+
+
+    reset.addEventListener("click", function(e) {
+        container.innerHTML = "";
+    });
+
 }
 
 
